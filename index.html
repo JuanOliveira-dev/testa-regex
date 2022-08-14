@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando expressões regulares</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__brand">
+            <img class="header__brand__logo" src="img/NauJR.png" alt="">
+            <p class="header__brand__name">NauJR Dev</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <form class="form">
+            <h1 class="form__title">Teste de expressões regulares</h1>
+            
+            <div class="form__group">
+                <label class="form__label" for="target">Alvo:</label>
+                <textarea  class="form__input" id="target" rows="4" placeholder="Insira o conteúdo do alvo"></textarea>
+            </div>
+
+            <div class="form__group">
+                <label class="form__label" for="pattern">Expressão regular:</label>
+                <input class="form__input" type="text" id="pattern" value="" placeholder="Insira a expressão regular">
+            </div>
+            
+            <div class="form__group">
+                <label class="form__label" for="results">Resultado:</label>
+                <input class="form__input" type="text" id="results" value="" placeholder="Insira um alvo e uma expressão" readonly>
+                <p class="form__match" id="matchInfo"></p>
+            </div>
+
+            <!-- <div class="form__group">
+                Área de highlight
+            </div> -->
+
+            <div class="form__group">
+                <button class="form__btn" onclick="execute(event)">Executar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <img class="footer__brand__logo" src="img/NauJR.png" alt="">
+        <p class="footer__brand__name">NauJR Dev</p>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
